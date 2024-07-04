@@ -1,0 +1,49 @@
+.container {
+    height: 100px;
+    border-bottom: 1px solid #333;
+}
+
+.logo_container {
+    position: relative;
+    display: inline-block;
+    .logo{
+        :hover {
+            opacity: 0;
+        }
+        width: 200px;
+        height: auto;
+        transition: opacity 0.4s ease-in-out;
+    }
+    .logo_hover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: auto;
+        opacity: 0;
+        transition: opacity 0.4s ease-in-out;
+    }
+}
+
+.logo_container:hover .logo_hover {
+    opacity: 1;
+}
+
+.logo_container:hover .logo {
+    opacity: 0;
+}
+
+ul {
+    li {
+        :hover{
+            color: #3498db;
+        }
+        a{
+            color: #000;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+    }
+}
