@@ -1,4 +1,5 @@
 import Hd from './component/Hd'
+import Slide from './component/Slide';
 
 function Srh(){
     return(
@@ -8,6 +9,7 @@ function Srh(){
         // 3. 반드시 앞뒤 짝 있어야함
         <>
           <Hd></Hd>
+          <Slide></Slide>
         </>
     )
 }
